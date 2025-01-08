@@ -1,3 +1,6 @@
+// disable console window
+#![windows_subsystem = "windows"]
+
 use classes::{conf::GameConfig, game::Game};
 use crystal::*;
 use macroquad::prelude::*;
