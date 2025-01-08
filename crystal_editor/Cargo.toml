@@ -1,0 +1,8 @@
+[package]
+name = "crystal_editor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crystal = { version = "0.1.0", path = "../crystal" }
+egui = "0.30.0"

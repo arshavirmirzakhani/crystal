@@ -1,0 +1,8 @@
+[package]
+name = "crystal_bin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crystal = { version = "0.1.0", path = "../crystal" }
+macroquad = "0.4.13"

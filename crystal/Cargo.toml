@@ -1,0 +1,14 @@
+[package]
+name = "crystal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = "0.4.13"
+rapier2d = "0.22.0"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
