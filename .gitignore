@@ -9,3 +9,8 @@ Cargo.lock
 *.pdb
 
 .idea/
+.vscode/*
+
+.history/
+
+*.vsix
