@@ -1,0 +1,22 @@
+name: wasm debug build
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup wasm toolchain
+      run: rustup target add wasm32-unknown-unknown
+    - name: Build
+      run: python build.py --target wasm32-unknown-unknown
