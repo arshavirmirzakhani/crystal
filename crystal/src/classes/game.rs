@@ -1,7 +1,7 @@
-use super::conf::GameConfig;
+use crate::classes::conf::GameConfig;
 
 trait Init {
-    fn init(&self);
+    fn init(&mut self);
 }
 
 pub struct Game {
@@ -9,7 +9,7 @@ pub struct Game {
 }
 
 impl Init for Game {
-    fn init(&self) {
+    fn init(&mut self) {
         println!("{:?}", self.conf.game_name);
     }
 }

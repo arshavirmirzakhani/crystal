@@ -1,4 +1,3 @@
-use macroquad::prelude::*;
-
 pub mod classes;
-use classes::conf::*;
+pub use winit;
+pub mod window;

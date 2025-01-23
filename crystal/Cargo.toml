@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-macroquad = "0.4.13"
+winit = "0.30.8"
 rapier2d = "0.22.0"
 
 [profile.dev]
