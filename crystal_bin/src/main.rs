@@ -1,6 +1,13 @@
 // disable console window
 #![windows_subsystem = "windows"]
 
+//
+// this project (crystal_bin) is the game executable itself. once game data is loaded it runs the required functions
+// and let the magic happen.
+//
+
+// for now im using it to test engine functionality
+
 use winit::application::ApplicationHandler;
 use winit::event::WindowEvent;
 use winit::event_loop::{ActiveEventLoop, ControlFlow, EventLoop};

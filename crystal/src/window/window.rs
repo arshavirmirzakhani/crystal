@@ -1,8 +1,11 @@
 use crate::classes::conf::GameConfig;
 use winit::application::ApplicationHandler;
 use winit::event::WindowEvent;
-use winit::event_loop::{ActiveEventLoop, EventLoop};
+use winit::event_loop::ActiveEventLoop;
 use winit::window::{Window, WindowId};
+
+// The LoadConf trait loads the required configuration into the game window
+
 trait LoadConf {
     fn load_conf(&mut self, conf: GameConfig);
 }
@@ -34,7 +37,7 @@ impl ApplicationHandler for GameWindow {
     fn window_event(&mut self, event_loop: &ActiveEventLoop, _id: WindowId, event: WindowEvent) {
         match event {
             WindowEvent::CloseRequested => {
-                println!("The close button was pressed; stopping");
+                println!("The close button was pressed; stopping"); // i should remove this
                 event_loop.exit();
             }
             WindowEvent::RedrawRequested => {
