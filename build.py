@@ -9,4 +9,3 @@ for p in ["crystal","crystal_bin","crystal_editor"]:
     os.chdir(p)
     subprocess.run(["cargo","build"]+sys.argv[1:])
     os.chdir("..")
-    

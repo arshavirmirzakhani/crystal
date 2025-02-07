@@ -8,4 +8,3 @@ for p in ["crystal","crystal_bin","crystal_editor"]:
     os.chdir(p)
     subprocess.run(["cargo","clean"])
     os.chdir("..")
-    

@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 winit = "0.30.8"
+wgpu = "24.0.1"
 rapier2d = "0.23.0"
 
 [profile.dev]
